@@ -1,0 +1,722 @@
+:root {
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --button: #bfd732;
+    --font: #f5f6f7;
+    --font-family-sans-serif: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    --font-family-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+}
+ 
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+.container {
+    max-width: min(94%);
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* Header */
+
+.logo {
+    width: 11.6%;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    white-space: nowrap;
+    align-items: center;
+    height: 7.2rem;
+    margin: 0 4rem;
+    background-color: #fff;
+}
+.links {
+    text-decoration: none;
+    margin-right: .5rem;
+    margin-top: 1.8rem;
+    color: var(--dark);
+    font-family: var(--font-family-sans-serif);
+    font-size: 1.4rem;
+    font-weight: bold;
+    padding: 1.3rem;
+}
+.button {
+    text-transform: uppercase;
+    background-color: var(--button);
+    border-radius: 2.5rem;
+    margin-right: 3.5rem;
+}
+
+.first-section {
+    background-image: url(../img/globant-ph1.jpg);
+    /* width: 100%; */
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 657px;
+    margin-bottom: 4rem;
+}
+.first-section__content {
+    position: absolute;
+    background-color: rgba(0, 0, 0, .7);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--light);
+    font-family: var(--font-family-sans-serif);
+}
+.section__title {
+    font-size: 9rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 3.5rem;
+    font-weight: bold;
+}
+.section__paragraph {
+    font-size: 2.5rem;
+    width: 68%;
+    margin: 6rem 0rem;
+    margin-top: 0;
+    text-align: center;
+}
+.section__button {
+    text-decoration: none;
+    color: var(--dark);
+    background-color: var(--light);
+    padding: 1rem 5rem;
+    border-radius: 2.5rem;
+    margin-bottom: 1.9rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+/* Articles */
+
+.articles {
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+    width: 100%;
+    height: 30rem;
+}
+.articles__img {
+    width: 46rem;
+    height: 17rem;
+    background-size: cover;
+    border-radius: .4rem;
+    margin-bottom: 1rem;
+
+}
+.articles__links {
+    font-weight: bold;
+    font-size: 1.15rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--info);
+    font-family: var(--font-family-sans-serif);
+}
+.articles__paragraph {
+    font-size: 1.60rem;
+    text-align: start;
+    color: var(--gray-dark);
+    margin-top: 0.7rem;
+    font-family: var(--font-family-sans-serif);
+    width: 92%;
+}
+.articles__content {
+    width: 50rem;
+}
+
+/* Second Section */
+
+.main {
+    color: var(--dark);
+}
+.second-section {
+    font-family: var(--font-family-sans-serif);
+    height: 84rem;
+}
+.second-section__description {
+    text-align: center;
+    max-width: min(70%);
+    margin: 0 auto;
+    margin-bottom: 8rem;
+}
+.second-section__title {
+    font-size: 5rem;
+}
+.second-section__paragraph {
+    font-size: 2.9rem;
+    font-weight: 320;
+    color: black;
+    line-height: 1.8;
+}
+
+.second-section__content {
+    display: grid;
+    grid-template-columns: repeat(2, 38% 62%);
+    column-gap: 1rem;
+    color: black;
+}
+.second-section__paragraph--content {
+    font-size: 2.9rem;
+    font-weight: 320;
+    line-height: 1.4;
+    margin-bottom: 4rem;
+}
+.second-section__button {
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 1rem 5rem;
+    border-radius: 3rem;
+    border: 2px solid black;
+    background-color: var(--white);
+    text-decoration: none;
+    color: #212529;
+}
+.second-section__images {
+    position: relative;
+}
+.second-section__image {
+    width: 10rem;
+    height: 10rem; 
+    border: 1px solid #555; 
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    position: absolute;
+}
+.second-section__image1 {
+    width: 26.7rem;
+    height: 26.7rem;
+    margin-left: 5rem;
+    left: 6.5rem;
+    top: 6rem;
+}
+.second-section__image2 {
+    width: 15rem;
+    height: 15rem;
+    left: 36rem;
+    top: 1rem;
+}
+.second-section__image3 {
+    width: 18rem;
+    height: 18rem;
+    left: 53.5rem;
+    top: 4rem;
+}
+.second-section__image4 {
+    width: 18rem;
+    height: 18rem;
+    left: 9rem;
+    top: 34.5rem;
+}
+.second-section__image5 {
+    width: 14rem;
+    height: 14rem;
+    left: 27.5rem;
+    top: 30.5rem;
+}
+.second-section__image6 {
+    width: 21.5rem;
+    height: 21.5rem;
+    left: 39rem;
+    top: 17rem;
+}
+
+/* Third Section */
+.third-section {
+    background-color: var(--font);
+    margin-top: 10rem;
+    height: 30rem;
+    text-align: center;
+    padding-top: 4.7rem;
+    font-family: var(--font-family-sans-serif);
+    color: #000;
+    padding-bottom: 40rem;
+}
+.third-section__title {
+    font-size: 2.7rem;
+}
+.third-section__paragraph {
+    font-size: 1.5rem;
+}
+
+/* Four Section */
+
+.four-section {
+    height: 50rem;
+    margin-bottom: 1rem;
+}
+.four-section__content {
+    display: grid;
+    grid-template-columns: repeat(2, 41.5% 58.5%);
+}
+.four-section__description {
+    text-align: left;
+    font-family: var(--font-family-sans-serif);
+    padding-left: 4.1rem;
+    padding-right: 10rem;
+}
+.four-section__title {
+    font-size: 2.8rem;
+    color: #212529;
+    padding-top: 5.4rem;
+}
+.four-section__subtitle {
+    font-size: 1.8rem;
+    color: #212529;
+    font-weight: normal;
+    padding-top: 0.2rem;
+}
+.four-section__span {
+    font-weight: bold;
+}
+.four-section__paragraph {
+    font-size: 1.6rem;
+    padding-bottom: 2.2rem;
+}
+.four-section__button {
+    font-size: 1.4rem;
+    background-color: #fff;
+    border: 2px solid black;
+    border-radius: 4rem;
+    padding: 1rem 3.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #000;
+}
+.four-section__right {
+    background-image: url('https://www.globant.com/sites/default/files/case_study/smiledirectclub%20thumbnail.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50rem;
+    position: relative;
+}
+.four-section__nav {
+    background-color: #fff;
+    padding: 2.8rem;
+    font-size: 1.8rem;
+    position: absolute;
+    width: 42%;
+    bottom: 0px;
+    left: 0px;
+    box-shadow: 0px 2px 15px 0px #999;
+}
+.four-section__link {
+    text-decoration: none;
+    color: #212529;
+    padding-right: 4rem;
+    padding-left: .7rem;
+}
+
+
+/* Five section */
+
+.five-section {
+    background-image: url(../img/globant-ph.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin-bottom: 17rem;
+    position: relative;
+    height: 1100px;
+}
+.five-section__content {
+    position: absolute;
+    background-color: rgba(0, 0, 0, .7);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--light);
+    font-family: var(--font-family-sans-serif);
+    margin: 0;
+    padding: 0;
+}
+.five-section__description {
+    text-align: center;
+    padding-top: 16rem;
+}
+.five-section__title {
+    color: var(--white);
+    font-size: 2.8rem;
+}
+.five-section__subtitle {
+    color: var(--white);
+    font-size: 1.6rem;
+    padding-bottom: 10rem;
+}
+.five-section__articles {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.five-section__article {
+    width: 40.5rem;
+    height: 34.8rem;
+    margin-right: 1.35rem;
+    background-color: #fff;
+    margin-bottom: 6rem;
+    margin-left: 1.5rem;
+}
+.five-section__date {
+    font-size: 1.5rem;
+    color: var(--gray);
+    padding-left: 2rem;
+}
+.five-section__description--article {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000;
+    padding-left: 2rem;
+}
+.five-section__img {
+    width: 41rem;
+    height: 22.5rem;
+}
+.five-section__article--1,
+.five-section__article--4 {
+    margin-left: 4rem;
+}
+.five-section__article--3,
+.five-section__article--6 {
+    margin-right: 3.78rem;
+}
+.five-section__buttons {
+    margin-top: 3.4rem;
+}
+.five-section__button1,
+.five-section__button2 {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 1.5rem;
+    border: 2px solid black;
+    border-radius: 4rem;
+    padding: 1.5rem 3.1rem;  
+}
+.five-section__button1 {
+    margin-right: 2rem;
+}
+
+
+/* Six section */
+
+.six-section {
+    background-image: url('https://www.globant.com/sites/default/files/2021-03/trends_background.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 134.7rem;
+    height: 52.5rem;
+    font-family: var(--font-family-sans-serif);
+    color: var(--font);
+}
+.six-section__gradient {
+    background-image: linear-gradient(to right,#fbab7e 0%, #f7ce68 33%,#91c5fc 0%, #dcc3fc 66%,#add16b 0%, #71d186 22%, #22d1a9 51%, #16b6d8);
+    height: 1rem;
+    width: 134.7rem;
+    margin-bottom: 0;
+}
+.six-section__content {
+    text-align: left;
+    width: 56rem;
+    padding-left: 4rem;
+    padding-top: 2.2rem;
+    line-height: 1.2;
+}
+.six-section__title {
+    font-size: 2.8rem;
+    font-weight: bold;
+    padding-bottom: .4rem;
+}
+.six-section__subtitle {
+    font-size: 2.6rem;
+    padding-bottom: 2rem;
+    font-weight: 325;
+}
+.six-section__button {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.4rem;
+    color: var(--white);
+    background-color: var(--button);
+    border-radius: 4rem;
+    padding: 1.1rem 3.4rem;
+}
+
+
+/* Seven section */
+.seven-section {
+    background-image: url('https://www.globant.com/sites/default/files/2021-04/bg%20%281%29_0.jpeg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 134.7rem;
+    height: 59.5rem;
+    font-family: var(--font-family-sans-serif);
+    color: #29394a;
+    position: relative;
+    margin-bottom: 10rem;
+}
+.seven-section__content {
+    margin-right: 55rem;
+    margin-left: 5.1rem;
+}
+.seven-section__title {
+    margin: 0;
+    font-weight: 648;
+    font-size: 4.7rem;
+    padding-top: 3.5rem;
+    padding-bottom: .5rem;
+}
+.seven-section__subtitle {
+    font-size: 1.8rem;
+    text-align: start;
+    padding-right: 24rem;
+    line-height: 2.2rem;
+    padding-bottom: 2.8rem;
+}
+.seven-section__button {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.6rem;
+    color: var(--dark);
+    border-radius: 4rem;
+    border: 2px solid #000;
+    padding: .9rem 3.8rem;
+}
+.seven-section__logo {
+    
+}
+.seven-section__img {
+    position: absolute;
+    bottom: 4.9rem;
+    right: 5.7rem;
+    width: 23rem;
+    height: 8.3rem;
+}
+
+
+/* Eight section */
+
+.eight-section {
+    margin-bottom: 20rem;
+    height: 25rem;
+    text-align: center;
+    font-family: var(--font-family-sans-serif);
+    padding: 0 20rem;
+    position: relative;
+}
+.eight-section__title {
+    font-weight: bold;
+    font-size: 4.7rem;
+    color: #000;
+    padding-top: 5rem;
+}
+.eight-section__subtitle {
+    font-size: 2.4rem;
+    font-weight: 350;
+    padding-bottom: 1.2rem;
+}
+.eight-section__input {
+    border-radius: 4rem;
+    font-size: 1.2rem;
+    padding: 1.2rem;
+    width: 36rem;
+    height: 4.2rem;
+    border: 1px solid #BDBDBD;
+    position: absolute;
+    left: 46.5rem;
+    top: 23.5rem;
+}
+.eight-section__button {
+    font-size: 1.4rem;
+    border-radius: 4rem;
+    height: 4.2rem;
+    border: none;
+    padding: 1.2rem 3rem;
+    background-color: #662D91;
+    color: var(--white);
+    text-transform: uppercase;
+    position: absolute;
+    top: 23.5rem;
+    left: 75rem;
+    cursor: pointer;
+}
+
+
+/* nine section */
+
+.nine-section {
+    background-image: url('https://www.globant.com/sites/default/files/2021-02/WAG%20hero%20D.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 134.7rem;
+    height: 51rem;
+    font-family: var(--font-family-sans-serif);
+}
+.nine-section__content {
+    width: 57rem;
+    padding-top: 11rem;
+    padding-left: 4rem;
+    color: #000;
+}
+.nine-section__title {
+    font-size: 2.8rem; 
+}
+.nine-section__subtitle {
+    font-size: 2.5rem;
+    font-weight: 340;
+    line-height: 3.2rem;
+    margin-bottom: 4rem;
+}
+.nine-section__button {
+    text-decoration: none;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--white);
+    background-color: var(--button);
+    padding: 1.1rem 3.5rem;
+    border-radius: 4rem;
+}
+
+/* Ten section */
+
+.ten-section {
+    background-color: #121212;
+    width: 100%;
+    height: 17rem;
+    font-family: var(--font-family-sans-serif);
+    position: relative;
+    padding: 2rem 0;
+}
+.ten-section__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.ten-section__princ {
+    max-width: 25%;
+}
+.ten-section__logo {
+    background-image: url('https://www.globant.com/sites/default/files/2020-04/globant-light-bg-color%402x%20%282%29.png');
+    width: 20rem;
+    height: 4rem;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.ten-section__subtitle {
+    color: #B8B8B8;
+    font-size: 1.4rem;
+}
+.ten-section__contact{
+    max-width: 16.66%;
+    padding-left: 5rem;
+}
+.ten-section__links {
+    display: flex;
+    flex-direction: column;
+    
+}
+.ten-section__paragraph {
+    color: #B8B8B8;
+    font-size: 1.45rem;
+    margin: 1rem 0;
+}
+.ten-section__link {
+    text-decoration: none;
+    color: #B8B8B8;
+    font-size: 1.45rem;
+}
+.ten-section__follow {
+    max-width: 25%;
+    padding-left: 8rem;
+}
+.ten-section__links--follow {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem 2rem;
+}
+.ten-section__suscribe {
+    max-width: 33.33%;
+    padding-left: 16rem;
+}
+.ten-section__title--suscribe {
+    padding-left: 1rem;
+}
+.ten-section__title {
+    color: var(--white);
+    font-size: 1.45rem;
+    margin: 1rem 0;
+}
+.ten-section__input {
+    border-radius: 4rem;
+    font-size: 1.25rem;
+    padding: 2rem;
+    width: 30rem;
+    background-color: #121212;
+    height: 4.5rem;
+    border: 1px solid #BDBDBD;
+}
+
+
+/* Footer */
+
+.footer {
+    background-color: #000;
+    width: 100%;
+    height: 4.5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: var(--font-family-sans-serif);
+    color: var(--secondary);
+}
+.footer__link {
+    text-decoration: none;
+    color: #E9E9E9;
+    font-size: 1.3rem;
+}
+
+/* Algun dia lo terminare... */
